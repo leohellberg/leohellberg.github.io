@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <button onclick="myFunction()">Click me to see Jonathans social security number</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "031230 4367";
+}
+</script>
+
+<p onclick="myFunction(this, 'blue')">Click anywhere in this window to change the background color of body.</p>
+
+
+<script>
+<button onclick="myFunction2()">Click me to change background color</button>
+
+ {
+  document.getElementsByTagName("BODY")[0].style.backgroundColor = "red";
+  
+}
+
+</script>
+
+<p onclick="myFunction3(this, 'blue')">Click any text to change text color.</p>
+
+<script>
+function myFunction3(elmnt,clr) {
+  elmnt.style.color = clr;
+}
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

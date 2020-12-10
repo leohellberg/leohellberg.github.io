@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+}
+
+#boll {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    background-color: blue;
+    border: blue;
+}
+
+
+#demo8 { 
+    font-size: x-small;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <script src="script.js"></script>
+</head>
+<body style ="text-align: center;">
+   
+
+    <h1>JavaScript</h1>
+
+ <div id="boll"> 
+    <button type="button"
+    onclick="document.getElementById('bild')
+    .src='boll.jpg'">Fotboll</button>
+
+<img size src="boll.jpg" alt="boll" id="bild">
+
+<button type="button"
+onclick="document.getElementById('bild')
+.src='tennisboll (1) (1).png'">tennisboll</button>
+
+</div>
+
+
+<br>
+<br>
+<button onclick="myFunction()">Click me to see Jonathans social security number</button>
+
+<p id="demo"></p>
+
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "031230 4367";
+}
+</script>
+
+
+
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='40px'">Click Me to enhance Jonathans private information</button>
+
+<p onclick="myFunction3(this, 'blue')">Click this text to change text color.</p>
+
+<script>
+function myFunction3(elmnt,clr) {
+  elmnt.style.color = clr;
+}
+</script>
+
+<br>
+<br>
+<button onclick="myFunction5()">IMPORTANT</button>
+
+<p id="demo2"></p>
+
+<script>
+function myFunction5() {
+  var txt;
+  var person = prompt("Please enter your age:", "x");
+  if (person >= 13 || person == "") {
+    txt = "Please leave";
+  } else {
+    txt = "Perfect " + person + "! How are you today?";
+  }
+  document.getElementById("demo2").innerHTML = txt;
+}
+</script>
+
+<button onclick="myFunction6()">Click me to see which country you live in.</button>
+
+<p id="demo6"></p>
+
+
+<script>
+function myFunction6() {
+  document.getElementById("demo6").innerHTML = "You live in sweden";
+}
+</script>
+
+
+<script>
+  function myFunction7() {
+    document.getElementById("demo7").innerHTML = "No they are green.";
+  }
+  </script>
+  
+  
+  
+  
+  <p id="demo7">Trees are blue</p>
+  
+  <button type="button" onclick="myFunction7()">The truth</button>
+
+  <p id="demo8">I cant read this text.</p>
+
+<button type="button" onclick="document.getElementById('demo8').style.fontSize='35px'">Click Me!</button>
+
+<br>
+<br>
+<br>
+<br>
+
+<p id="demo9">I am writing something. Yes, I plan to make it the most boring thing ever written. I go to the store. A car is parked. Many cars are parked or moving. Some are blue. Some are tan. They have windows. In the store, there are items for sale. These include such things as soap, detergent, magazines, and lettuce. You can enhance your life with these products. Soap can be used for bathing, be it in a bathtub or in a shower. Apply the soap to your body and rinse. Detergent is used to wash clothes. Place your dirty clothes into a washing machine and add some detergent as directed on the box. Select the appropriate settings on your washing machine and you should be ready to begin. Magazines are stapled reading material made with glossy paper, and they cover a wide variety of topics, ranging from news and politics to business and stock market information. Some magazines are concerned with more recreational topics, like sports card collecting or different kinds of hairstyles. Lettuce is a vegetable. It is usually green and leafy, and is the main ingredient of salads. You may have an appliance at home that can quickly shred lettuce for use in salads. Lettuce is also used as an optional item for hamburgers and deli sandwiches. Some people even eat lettuce by itself. I have not done this. So you can purchase many types of things at stores.</p>
+
+<button type="button" onclick="document.getElementById('demo9').style.display='none'">Hide this boring text</button>
+
+<br>
+<br>
+
+
+<button onclick="myFunction10()">Calculate.</button>
+
+<p id="demo10">10 + 5</p>
+
+
+<script>
+function myFunction10() {
+  document.getElementById("demo10").innerHTML = "10 + 5 = 15";
+}
+</script>
+
+<button type="button" onclick="myFunction11()">Change background color</button>
+
+<script>
+function myFunction11() {
+  document.body.style.backgroundColor = "yellow";
+}
+</script>
+
+
+</body>
+</html>
