@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<body style ="text-align: center;"></body>
+<link rel="stylesheet" href="spel.css">
+
+<script>
+
+function Slump() {
+
+
+x = Math.floor((Math.random() * 5) + 1);
+y = document.getElementById("text1").value;
+
+if (x == y) {
+
+document.getElementById("output2").innerHTML = "Rätt! Talet var: " + x;
+
+}
+
+else {
+
+document.getElementById("output2").innerHTML = "Fel! Talet var: " + x;
+
+}
+}
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Det här spelet går ut på att med ett försök gissa vilket slumpmässigt tal mellan 1-5 som datorn fått.";
+}
+
+</script>
+
+</head>
+<body>
+
+<h1 id="output2">Gissa Talet</h1>
+<input type="text" id="text1">
+<input type="button" value="Gissa!" onClick="Slump()">
+
+<button onclick="myFunction()">HELP</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
