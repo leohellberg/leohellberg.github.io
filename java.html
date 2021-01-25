@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <body style="text-align: center;">
+
+<svg height="500" width="700">
+    <rect x="100" y="100" width="600" height="400" style="fill:blue;stroke:pink;stroke-width:0;fill-opacity:1;stroke-opacity:0.9" />
+    <rect x="100" y="250" width="600" height="80" style="fill:yellow;stroke:pink;stroke-width:0;fill-opacity:1;stroke-opacity:0.9" />
+    <rect x="280" y="100" width="80" height="400" style="fill:yellow;stroke:pink;stroke-width:0;fill-opacity:1;stroke-opacity:0.9" />
+
+</svg>
+ 
+
+<br>
+<br>
+
+<button onclick="myFunction6()">Skriv ett meddelande</button>
+
+
+
+<p id="demo3"></p>
+<script>
+
+
+
+    function myFunction6() {
+      var txt;
+      var person = prompt("Skriv:", "");
+      if (person <= 12 || person == "") {
+        txt = "";
+      } else {
+        txt =  person ;
+        
+      }
+      document.getElementById("demo3").innerHTML = txt;
+    }
+    </script>
+
+<canvas id="myCanvas" width="300" height="300" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+    
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.rect(75, 50, 100, 100, 2 * Math.PI);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.rect(100, 75, 50, 50, 2 * Math.PI);
+    ctx.stroke();
+    </script> 
+
+
+</body>
+</html>
