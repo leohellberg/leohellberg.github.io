@@ -1,7 +1,22 @@
+* {
+    font-size: 100%;
+    font-family: serif;
+   }
+
 body {
+
     text-align: center;
-    font-family: Arial;
+    width: 70%;
+    height: 100ew;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-width: 1px;
+    border-style:solid;
+    border-color: black;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -32,92 +47,66 @@ nav a:hover {
 }
  
 
-.login {
-    display: inline-block;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    width: 100px;
-    height: auto;
-    background-color: white;
-}
+
 
 .in {
     padding-bottom: 5px;
 }
 
+.container :hover {
+    background-color: grey;
+    color:white;
+    
+
+}
 
 .container{
     
     text-align: center;
     background-color: whitesmoke;
     width: 100%;
-    height: 900px;
+    height: 700px;
 
 }
 
+
+
 .container > div {
-    width: 280px;
-    height: 200px;
+    width: 30%;
+    height: 160px;
     background: whitesmoke;
     
 
 }
 
-.e1 {
+
+#more {display: none;}
+
+
+.i1 {
     float: left;
     
+   
       
 
         
       }
-.e2 {
+.i2 {
     display: inline-block;
     margin: 0 auto;
    
   
 }
 
-.e3 {
+.i3 {
    float: right;
 
 }
 
-.e4 {
-    float: left;
-} 
 
-.e5 {
-    display: inline-block;
-    margin: 0 auto;
-}
-     
-.e6 {
-    float: right;
-}
-
-.e7 {
-    float: left;
-    
-      
-
-        
-      }
-.e8 {
-    display: inline-block;
-    margin: 0 auto;
-   
-  
-}
-
-.e9 {
-   float: right;
-}
 
 .footer {
-    width: 100vw;
+    width: 100ew;
     display: block;
     overflow: hidden;
     padding: 70px 0;
@@ -130,5 +119,12 @@ nav a:hover {
     margin: 0 auto;
     width: 1100px;
     height: 100%;
+    color: white;
+    text-align: left;
+    float: left;
+}
+
+#contacts {
+    float: left;
 }
 
