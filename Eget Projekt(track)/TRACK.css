@@ -7,7 +7,7 @@ body {
 
     text-align: center;
     width: 70%;
-    height: 100ew;
+    height: 100%;
 
     margin-left: auto;
     margin-right: auto;
@@ -129,12 +129,13 @@ body {
 
 
 .footer {
-    width: 100ew;
+    width: 100%;
     display: block;
     overflow: hidden;
     padding: 70px 0;
     box-sizing: border-box;
     background-color: black;
+    font-size: small;
 }
 
 .inner_footer{
